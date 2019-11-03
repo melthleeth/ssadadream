@@ -15,7 +15,7 @@
     <string name="ordernow_others">주문진행상태</string>
     <string name="ordernow_mine">신청현황</string>
     <string name="ordernow_tab_others">내가 등록한 주문의 참여 현황</string>
-    <string name="ordernow_tab_mine">나가 참여한 주문 현황</string>
+    <string name="ordernow_tab_mine">내가 참여한 주문 현황</string>
     <string name="addpopup_title">팝업테스트</string>
     <string name="addpopup_content">팝업테스트 부제목</string>
 

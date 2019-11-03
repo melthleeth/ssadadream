@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowOrderNow_Mine_tab">
+    tools:context=".ShowOrderNow_Mine_tab"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <TextView
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/ordernow_tab_mine" />
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가게명 : 파고커피\n메뉴 : 아이스아메리카노\n추가요청사항 : 음료는 콜라로 해주세요\n픽업장소 : 공학관A동 로비\n픽업시간 : 11 : 45" />
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가게명 : 케밥인\n메뉴 : 양고기라이스랩 set\n추가요청사항 : 음료는 콜라로 해주세요\n픽업장소 : 학생회관 앞\n픽업시간 : 14 : 00"/>
+    </LinearLayout>
 
-</FrameLayout>
+</ScrollView>
