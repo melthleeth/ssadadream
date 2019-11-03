@@ -29,7 +29,7 @@ class AdditemActivity : AppCompatActivity() {
             editor.commit()
             val nextIntent = Intent(this, AdditemPopUpActivity::class.java)
             nextIntent.putExtra("itemnum",num);
-            num += 1
+            num += 1    //이게..아닌데...
             startActivity(nextIntent)
         }
     }

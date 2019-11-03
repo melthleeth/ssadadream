@@ -21,9 +21,9 @@ class AdditemPopUpActivity : AppCompatActivity() {
         txtText.text = setCheckText
 
         btn_additempopup_no.setOnClickListener{
-            val nextIntent = Intent(this, AdditemActivity::class.java)
-            startActivity(nextIntent)
-           //finish()
+           // val nextIntent = Intent(this, AdditemActivity::class.java)
+            //startActivity(nextIntent)
+           finish()
         }
 
         btn_additempopup_yes.setOnClickListener{
