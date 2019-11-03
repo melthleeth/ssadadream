@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_pagename"
-        android:textSize="50dp"
+        android:textSize="45sp"
         android:textColor="@color/black"
         android:fontFamily="@font/baemin_hanna"
         android:layout_marginTop="15dp"
@@ -141,6 +141,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:text="@string/add_arrtime_guide"
                 android:layout_margin="15dp"/>
 
@@ -148,7 +149,13 @@
                 android:id="@+id/btn_additem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/add_btntext" />
+                android:text="@string/add_btntext"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/baemin_hanna_air"
+                android:background="@drawable/bg_color_btn1"
+                android:paddingHorizontal="30dp"
+                android:layout_margin="10dp"/>
 
     </LinearLayout>
 

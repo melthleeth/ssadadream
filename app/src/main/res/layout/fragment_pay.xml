@@ -5,10 +5,38 @@
     android:layout_height="match_parent"
     tools:context=".PayFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_pay"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baemin_hanna"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@color/mint"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="100dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_qrcode"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
 
 </FrameLayout>
