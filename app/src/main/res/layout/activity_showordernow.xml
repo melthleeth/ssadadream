@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:text="@string/ordernow_name"
         android:textSize="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baemin_hanna"
         android:layout_margin="15dp"/>
 
     <com.google.android.material.tabs.TabLayout
@@ -22,7 +24,7 @@
         android:layout_height="wrap_content"/>
 
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/odernow_viewpager"
+            android:id="@+id/ordernow_viewpager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

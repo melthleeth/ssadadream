@@ -13,8 +13,8 @@ class ShowOrderNowActivity : AppCompatActivity() {
         setContentView(R.layout.activity_showordernow)
 
         val fragmentAdapter = ShowOrderNowAdapter(supportFragmentManager)
-        odernow_viewpager.adapter = fragmentAdapter
+        ordernow_viewpager.adapter = fragmentAdapter
 
-        ordernow_tab.setupWithViewPager(odernow_viewpager)
+        ordernow_tab.setupWithViewPager(ordernow_viewpager)
     }
 }

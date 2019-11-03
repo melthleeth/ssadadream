@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:text="@string/add_pagename"
         android:textSize="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baemin_hanna"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"/>
 
@@ -37,7 +39,9 @@
                 android:id="@+id/add_spin_class"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:entries="@array/classy"></Spinner>
+                android:entries="@array/classy">
+
+            </Spinner>
         </LinearLayout>
 
         <LinearLayout

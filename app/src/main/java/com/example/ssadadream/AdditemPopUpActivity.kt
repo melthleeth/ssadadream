@@ -27,7 +27,7 @@ class AdditemPopUpActivity : AppCompatActivity() {
         }
 
         btn_additempopup_yes.setOnClickListener{
-            val nextIntent = Intent(this, ShowOrderNowActivity::class.java)
+            val nextIntent = Intent(this, MainActivity::class.java)
             startActivity(nextIntent)
         }
     }

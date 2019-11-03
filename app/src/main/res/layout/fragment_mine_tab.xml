@@ -14,16 +14,25 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ordernow_tab_mine" />
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:text="@string/ordernow_tab_mine"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baemin_hanna_air"/>
     <TextView
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_square_r"
         android:text="가게명 : 파고커피\n메뉴 : 아이스아메리카노\n추가요청사항 : 음료는 콜라로 해주세요\n픽업장소 : 공학관A동 로비\n픽업시간 : 11 : 45" />
     <TextView
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_square_r"
         android:text="가게명 : 케밥인\n메뉴 : 양고기라이스랩 set\n추가요청사항 : 음료는 콜라로 해주세요\n픽업장소 : 학생회관 앞\n픽업시간 : 14 : 00"/>
     </LinearLayout>
 

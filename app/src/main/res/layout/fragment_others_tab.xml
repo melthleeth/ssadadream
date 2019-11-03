@@ -13,34 +13,42 @@
         <TextView
             android:id="@+id/others_store"
             android:layout_margin="20dp"
+            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baemin_hanna_air"
             android:text="테이큰커피 에 대한 신청 현황" />
         <TextView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="김아리 화장품공학과 아이스아메리카노\n추가요청사항 : 샷추가" />
         <TextView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="유현재 소프트웨어학과 아이스아메리카노\n추가요청사항 : 얼음많이요!!!!!" />
         <TextView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="신준철 항공우주정보시스템공학과 오레오바닐라\n추가요청사항 : 휘핑크림뺴주세요" />
         <TextView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="박상연 부동산학과 민트초코\n추가요청사항 : 휘핑크림 많이요" />
         <TextView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="한소현 건축학과 카라멜트윅스프라페\n추가요청사항 : 카라멜 드리즐 많이 뿌려주세요!"/>
 
         <Button
@@ -48,6 +56,10 @@
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/baemin_hanna"
+            android:textColor="@color/black"
+            android:background="@drawable/bg_color_btn1"
             android:text="매장에서 모든 메뉴 수령 완료!" />
     </LinearLayout>
 

@@ -1,7 +1,6 @@
 package com.example.ssadadream
 
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.*
 
 class ShowOrderNowAdapter (fm : androidx.fragment.app.FragmentManager) : FragmentPagerAdapter(fm){
     override fun getItem(position: Int): Fragment? {
