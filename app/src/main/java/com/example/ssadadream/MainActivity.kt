@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
         val check = getSharedPreferences("login", Context.MODE_PRIVATE)
         val checked = check.getInt("FirstorNot", 0)
 
+        val orderNum = getSharedPreferences("orderNum", Context.MODE_PRIVATE)
+        val edit = orderNum.edit()
+        edit.putInt("num", 0)   //주문 번호 생성 및 초기화
+        edit.commit()
+
+
         if (checked == 1) { //로그인 전, 회원가입만 한 상태
             startActivity(Intent(this, LoginActivity::class.java))
             finish()

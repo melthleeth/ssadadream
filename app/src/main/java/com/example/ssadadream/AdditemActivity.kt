@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_additem.*
 
@@ -12,23 +13,29 @@ class AdditemActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        var num = 0;    //주문마다 다른 name으로 저장하기 위한 변수...계속 증가해야하는데 어케해야할지 모르겠넹 디비 연결하면 그때 바꾸던지...
-        val shared: SharedPreferences = getSharedPreferences("additem"+ num, Context.MODE_PRIVATE)
-        val editor: SharedPreferences.Editor = shared.edit()
+        val orderNum = getSharedPreferences("orderNum", Context.MODE_PRIVATE)
+        val edit = orderNum.edit()
+
+        var num = 1+ orderNum.getInt("num",-1); //주문마다 다른 sharedpreference 이름으로 저장하기 위한 변수
+        edit.putInt("num", num)   //주문 번호 갱신
+        edit.commit()
+        val shared: SharedPreferences = getSharedPreferences("additem"+ num, Context.MODE_PRIVATE) //주문마다 다른 sharedpreference 이름으로 저장
+        val add_editor: SharedPreferences.Editor = shared.edit()
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_additem)
 
-        btn_additem.setOnClickListener{
-            editor.putInt("add_itemnum", num)
-            editor.putString("add_class", add_spin_class.selectedItem.toString());
-            editor.putString("add_spot", add_text_spot.text.toString())
-            editor.putString("add_dead", add_text_dead.text.toString())
-            editor.putString("add_meet", add_spin_spot.selectedItem.toString())
-            editor.putString("add_arr", add_text_arrtime.text.toString())
-            editor.commit()
+        btn_additem.setOnClickListener{ //각 항목 저장
+            add_editor.putInt("add_itemnum", num)
+            add_editor.putString("add_class", add_spin_class.selectedItem.toString());
+            add_editor.putString("add_location", add_text_spot.text.toString())
+            add_editor.putString("add_time_start", add_text_dead.text.toString())
+            add_editor.putString("add_time_end", add_spin_spot.selectedItem.toString())
+            add_editor.putString("add_people", add_text_arrtime.text.toString())
+            add_editor.commit()
             val nextIntent = Intent(this, AdditemPopUpActivity::class.java)
             nextIntent.putExtra("itemnum",num);
+            Toast.makeText(this, "주문번호 : "+ num, Toast.LENGTH_SHORT).show()
             startActivity(nextIntent)
         }
     }
