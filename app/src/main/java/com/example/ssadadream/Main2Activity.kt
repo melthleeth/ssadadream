@@ -1,5 +1,6 @@
 package com.example.ssadadream
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
@@ -14,6 +15,11 @@ class Main2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
+        val check = getSharedPreferences("login", Context.MODE_PRIVATE)
+        val move = check.edit()
+        move.putInt("FirstorNot", 2)    //로그인까지한 상태
+        move.commit()
 
         val bottomNavigation : BottomNavigationView = findViewById(R.id.btm_nav)
 

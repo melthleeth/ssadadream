@@ -4,6 +4,7 @@ package com.example.ssadadream
 import android.Manifest
 import android.app.Activity
 import android.app.DownloadManager
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -37,6 +38,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val check = getSharedPreferences("login", Context.MODE_PRIVATE)
+        val checked = check.getInt("FirstorNot", 0)
+
+        if (checked == 1) { //로그인 전, 회원가입만 한 상태
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        } else if (checked == 2) {  //로그인까지 한 상태
+            startActivity(Intent(this, Main2Activity::class.java))
+            finish()
+        }
 
         //BUTTON CLICK
         img_pick_btn.setOnClickListener {
