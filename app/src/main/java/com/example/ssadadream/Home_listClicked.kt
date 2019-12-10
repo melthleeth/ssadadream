@@ -20,6 +20,7 @@ class Home_listClicked : AppCompatActivity() {
 
         val i = intent
         val name = i.getStringExtra("name")
+        val people = i.getStringExtra("people")
         Toast.makeText(this, name, Toast.LENGTH_SHORT).show()
 
         order_name.setText(orderBefore.getString("OB_menu", "메뉴를 입력해주세요"))

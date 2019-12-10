@@ -79,6 +79,7 @@ class HomeFragment : Fragment() {
             ) {
                 val i = Intent(context, Home_listClicked::class.java)
                 i.putExtra("name", data.d_name)
+                i.putExtra("people", data.d_people)
                 startActivity(i)
             }
         }
@@ -92,6 +93,7 @@ class HomeFragment : Fragment() {
             ) {
                 val i = Intent(context, Home_listClicked::class.java)
                 i.putExtra("name", data.d_name)
+                i.putExtra("people", data.d_people)
                 startActivity(i)
             }
         }
@@ -105,6 +107,7 @@ class HomeFragment : Fragment() {
             ) {
                 val i = Intent(context, Home_listClicked::class.java)
                 i.putExtra("name", data.d_name)
+                i.putExtra("people", data.d_people)
                 startActivity(i)
             }
         }

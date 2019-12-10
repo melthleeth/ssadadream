@@ -81,6 +81,35 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="인원수:"
+            android:gravity="left"
+            android:layout_marginBottom="3dp"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/limit_people"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:entries="@array/peoplelimit"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp" />
