@@ -37,18 +37,22 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".AdditemActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".ShowOrderNowActivity" />
         <activity
             android:name=".AdditemPopUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/popupTheme" />
+        <activity android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 
