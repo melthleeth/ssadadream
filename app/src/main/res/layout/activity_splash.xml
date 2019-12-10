@@ -7,8 +7,9 @@
     tools:context=".SplashActivity">
 
     <Button
+        android:layout_gravity="center"
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/ic_user" />
+        android:layout_width="243dp"
+        android:layout_height="440dp"
+        android:background="@drawable/ssada_splash"/>
 </FrameLayout>

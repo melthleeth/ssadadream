@@ -31,6 +31,8 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view:View = inflater!!.inflate(R.layout.fragment_home, container, false)
 
+
+
         view.btn_add.setOnClickListener { view ->
             Toast.makeText(context, "주문 등록하기", Toast.LENGTH_SHORT).show()
             val intent = Intent(context, AdditemActivity::class.java)
@@ -43,6 +45,10 @@ class HomeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        init()
+    }
+
+    fun init() {
         val item_list1 = arrayListOf(
             HomeData("스타벅스", "산학협동관 1층", "11:45", "12:30", "7/7"),
             HomeData("차안유색", "경영관 1층", "12:20", "13:00", "4/7")
@@ -50,7 +56,7 @@ class HomeFragment : Fragment() {
 
         val item_list2 = arrayListOf(
             HomeData("서브웨이", "새천년관 1층", "12:00", "12:40", "4/4"),
-            HomeData("차안유색", "경영관 1층", "13:10", "14:00", "2/4")
+            HomeData("맘스터치", "경영관 1층", "13:10", "14:00", "2/4")
         )
 
         val item_list3 = arrayListOf(
@@ -111,6 +117,5 @@ class HomeFragment : Fragment() {
                 startActivity(i)
             }
         }
-
     }
 }
