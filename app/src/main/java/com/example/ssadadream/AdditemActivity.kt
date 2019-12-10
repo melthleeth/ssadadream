@@ -28,10 +28,10 @@ class AdditemActivity : AppCompatActivity() {
         btn_additem.setOnClickListener{ //각 항목 저장
             add_editor.putInt("add_itemnum", num)
             add_editor.putString("add_class", add_spin_class.selectedItem.toString());
-            add_editor.putString("add_location", add_text_spot.text.toString())
+            add_editor.putString("add_store", add_text_spot.text.toString())
             add_editor.putString("add_time_start", add_text_dead.text.toString())
-            add_editor.putString("add_time_end", add_spin_spot.selectedItem.toString())
-            add_editor.putString("add_people", add_text_arrtime.text.toString())
+            add_editor.putString("add_location", add_spin_spot.selectedItem.toString())
+            add_editor.putString("add_time_end", add_text_arrtime.text.toString())
             add_editor.commit()
             val nextIntent = Intent(this, AdditemPopUpActivity::class.java)
             nextIntent.putExtra("itemnum",num);

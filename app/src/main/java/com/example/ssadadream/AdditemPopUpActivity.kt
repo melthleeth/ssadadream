@@ -17,7 +17,7 @@ class AdditemPopUpActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_additempopup)
-        val setCheckText = "주문번호 : " + shared.getInt("add_itemnum", 777) + "\n" + shared.getString("add_class","없음class") + " - " + shared.getString("add_spot","없음spot") + "\n주문 마감은 " + shared.getString("add_dead","없음dead") + " 까지\n" + shared.getString("add_meet","없음meet") + " 에\n" + shared.getString("add_arr","없음arr") + "에 도착 예정"
+        val setCheckText = "주문번호 : " + shared.getInt("add_itemnum", 777) + "\n" + shared.getString("add_class","없음class") + " - " + shared.getString("add_store","없음spot") + "\n주문 마감은 " + shared.getString("add_time_start","없음dead") + " 까지\n" + shared.getString("add_location","없음meet") + " 에\n" + shared.getString("add_time_end","없음arr") + "에 도착 예정"
         txtText.text = setCheckText
 
         btn_additempopup_no.setOnClickListener{

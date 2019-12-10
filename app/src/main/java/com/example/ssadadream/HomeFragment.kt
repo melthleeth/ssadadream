@@ -70,6 +70,44 @@ class HomeFragment : Fragment() {
         recycle_list3.adapter = adapter3
         adapter3.notifyDataSetChanged()
 
+        adapter1.itemClickListener = object: HomeDataAdapter.OnItemClickListener {
+            override fun OnItemClick(
+                holder: HomeDataAdapter.ViewHolder,
+                view: View,
+                data: HomeData,
+                position: Int
+            ) {
+                val i = Intent(context, Home_listClicked::class.java)
+                i.putExtra("name", data.d_name)
+                startActivity(i)
+            }
+        }
+
+        adapter2.itemClickListener = object: HomeDataAdapter.OnItemClickListener {
+            override fun OnItemClick(
+                holder: HomeDataAdapter.ViewHolder,
+                view: View,
+                data: HomeData,
+                position: Int
+            ) {
+                val i = Intent(context, Home_listClicked::class.java)
+                i.putExtra("name", data.d_name)
+                startActivity(i)
+            }
+        }
+
+        adapter3.itemClickListener = object: HomeDataAdapter.OnItemClickListener {
+            override fun OnItemClick(
+                holder: HomeDataAdapter.ViewHolder,
+                view: View,
+                data: HomeData,
+                position: Int
+            ) {
+                val i = Intent(context, Home_listClicked::class.java)
+                i.putExtra("name", data.d_name)
+                startActivity(i)
+            }
+        }
 
     }
 }
